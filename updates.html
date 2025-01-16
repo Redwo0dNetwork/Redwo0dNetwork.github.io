@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redwood Network - Updates</title>
+    <title>Updates - Redwood Network</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #e2f0d9;
+            color: #2f4f3f;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #4b9e62;
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -34,6 +35,7 @@
         }
         nav a:hover {
             text-decoration: underline;
+            color: #a0d8b3;
         }
         .container {
             max-width: 1200px;
@@ -42,46 +44,63 @@
         }
         .section {
             margin-bottom: 2em;
+            padding: 2em;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
-            color: #2c3e50;
-            margin-bottom: 0.5em;
+            color: #4b9e62;
+            font-size: 2em;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        .updates-list {
-            margin-top: 1em;
-        }
-        .update-item {
-            background: white;
-            padding: 1em;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5em;
-        }
-        .update-item h3 {
-            color: #2c3e50;
-            margin-top: 0;
-        }
-        .update-item p {
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.7;
             color: #555;
         }
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #2c3e50;
-            color: white;
+        .update-box {
+            margin-bottom: 1.5em;
+            padding: 1.5em;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        footer p {
-            margin: 0;
+        .update-box h3 {
+            color: #4b9e62;
+            margin-bottom: 0.5em;
+        }
+        .update-box p {
+            margin: 0.5em 0;
+        }
+        footer {
+            font-size: 0.9em;
+            padding: 1em 0;
+            background-color: #4b9e62;
+            color: white;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        footer a:hover {
+            color: #a0d8b3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Redwood Network - Updates</h1>
+        <h1>Updates</h1>
         <nav>
+            <a href="index.html">Home</a>
             <a href="index.html#about">About</a>
             <a href="index.html#games">Games</a>
-            <a href="index.html#community">Community</a>
+            <a href="community.html">Community</a>
             <a href="updates.html">Updates</a>
             <a href="status.html">Game Server Status</a>
             <a href="index.html#faq">FAQs</a>
@@ -90,130 +109,70 @@
     </header>
 
     <div class="container">
-        <!-- Minecraft PVP Server Updates -->
-        <section id="minecraft-pvp-updates" class="section">
-            <h2>Minecraft Server: PVP Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: New Arena Released!</h3>
-                    <p>We’ve introduced a new PVP arena! Jump in with your friends and engage in epic battles. The new map comes with unique biomes and challenges, ensuring every match is fresh and exciting.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Anti-Cheat Enhancements</h3>
-                    <p>We’ve improved our anti-cheat system to ensure a fair and competitive environment for all players. Hackers beware!</p>
-                </div>
+        <section id="discord-updates" class="section">
+            <h2>Discord Updates</h2>
+            <div class="update-box">
+                <h3>New Events Coming Soon!</h3>
+                <p>Our community managers are working hard to bring you exciting Discord events, including game nights, giveaways, and more! Stay tuned for announcements in the #events channel.</p>
+            </div>
+            <div class="update-box">
+                <h3>Rule Updates</h3>
+                <p>We’ve updated our Discord server rules to promote a safer and more welcoming community. Be sure to check out the #rules channel for the latest guidelines.</p>
             </div>
         </section>
 
-        <!-- Minecraft Earth Towny Server Updates -->
-        <section id="minecraft-earth-towny-updates" class="section">
-            <h2>Minecraft Server: Earth Towny Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: Town Expansion Feature</h3>
-                    <p>Now you can expand your towns with new plots and features! Build a thriving community and grow your empire to be the largest in the world.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Economy Tweaks</h3>
-                    <p>We’ve made adjustments to the in-game economy to ensure a balanced experience. Trade, sell, and buy items more easily with updated pricing mechanics.</p>
-                </div>
+        <section id="server-updates" class="section">
+            <h2>Game Server Updates</h2>
+            <div class="update-box">
+                <h3>Minecraft Servers</h3>
+                <p><strong>PVP:</strong> A new map has been added for enhanced combat experiences. Join now and dominate the arena!</p>
+                <p><strong>Earth Towny:</strong> Major updates to the economy and building tools. Start your town today!</p>
+                <p><strong>Vanilla:</strong> Running on the latest version for a pure Minecraft experience. Updates include improved performance and new features.</p>
+            </div>
+            <div class="update-box">
+                <h3>BeamNG Drive Server</h3>
+                <p>New custom scenarios have been added. Test your driving skills with challenging courses!</p>
+            </div>
+            <div class="update-box">
+                <h3>GTA V Server (Alt V)</h3>
+                <p>New RP features and jobs have been introduced. Explore our expanded map and unlock new storylines!</p>
+            </div>
+            <div class="update-box">
+                <h3>Vintage Story Server</h3>
+                <p>Enhanced survival mechanics and seasonal updates are now live. Experience the thrill of survival in Vintage Story.</p>
+            </div>
+            <div class="update-box">
+                <h3>Red Dead Redemption 2 Server (RedM)</h3>
+                <p>Brand-new missions and events are available. Saddle up and ride into action!</p>
+            </div>
+            <div class="update-box">
+                <h3>Project Zomboid Server</h3>
+                <p>New mods have been added for an even more immersive zombie survival experience. Join us to test your survival skills!</p>
             </div>
         </section>
-
-        <!-- Minecraft Vanilla Server Updates -->
-        <section id="minecraft-vanilla-updates" class="section">
-            <h2>Minecraft Server: Vanilla Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: New Biomes</h3>
-                    <p>We’ve added new biomes to the vanilla world! Explore new environments and discover rare resources as you embark on your survival journey.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Performance Optimizations</h3>
-                    <p>Enjoy smoother gameplay with our performance optimizations. Less lag, more adventure!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- BeamNG Drive Server Updates -->
-        <section id="beamng-drive-updates" class="section">
-            <h2>BeamNG Drive Server Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: New Vehicles</h3>
-                    <p>Get ready to drive the newest additions to the BeamNG Drive fleet! We've added new cars and trucks with realistic handling and damage mechanics.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Improved Maps</h3>
-                    <p>We've improved the driving maps, adding new terrains and obstacles for you to challenge yourself with. Take on new roads and ramps!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- GTA V Server: Alt V Updates -->
-        <section id="gta-v-altv-updates" class="section">
-            <h2>GTA V Server: Alt V Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: Custom Roleplay Scripts</h3>
-                    <p>We’ve added custom scripts to enhance the roleplay experience. New jobs, vehicles, and unique events await you in the GTA V world!</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Stability Improvements</h3>
-                    <p>The server stability has been greatly improved to ensure smoother sessions. Enjoy a more stable and immersive experience.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Vintage Story Server Updates -->
-        <section id="vintage-story-updates" class="section">
-            <h2>Vintage Story Server Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: New Crafting Recipes</h3>
-                    <p>Explore new crafting recipes and tools. Whether you're building, farming, or surviving, there's something new for everyone.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Server World Enhancements</h3>
-                    <p>We've enhanced the server world with new environments and biomes, adding more places for you to explore and settle in!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Red Dead Redemption Server: RedM Updates -->
-        <section id="red-dead-redemption-updates" class="section">
-            <h2>Red Dead Redemption Server: RedM Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: Roleplay Additions</h3>
-                    <p>New roleplay features are live! Take on new jobs and roles in the wild west, and enjoy a more immersive experience with fellow players.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Bug Fixes & Performance Improvements</h3>
-                    <p>We've squashed some bugs and improved server performance for smoother gameplay. Hop into the Red Dead Redemption world now!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project Zomboid Server Updates -->
-        <section id="project-zomboid-updates" class="section">
-            <h2>Project Zomboid Server Updates</h2>
-            <div class="updates-list">
-                <div class="update-item">
-                    <h3>Update 1: New Survival Challenges</h3>
-                    <p>Get ready for new survival challenges! We've added more random events and new zombie types for you to survive against.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Update 2: Better Performance</h3>
-                    <p>We've improved server performance, allowing for a smoother experience even when the world gets crowded with zombies.</p>
-                </div>
-            </div>
-        </section>
-
     </div>
 
     <footer>
         <p>&copy; 2025 Redwood Network. All rights reserved.</p>
+        <p>
+            <a href="https://bsky.app/profile/redwoodnetwork" target="_blank" class="social-icon">
+                <i class="fab fa-bsky"></i>
+            </a>
+            <a href="https://discord.gg/redwoodnetwork" target="_blank" class="social-icon">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://youtube.com/c/RedwoodNetwork" target="_blank" class="social-icon">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </p>
+        <p>
+            <a href="index.html#about">About Us</a> |
+            <a href="community.html">Community</a> |
+            <a href="updates.html">Updates</a> |
+            <a href="status.html">Game Server Status</a> |
+            <a href="index.html#faq">FAQs</a> |
+            <a href="index.html#contact">Contact</a>
+        </p>
     </footer>
 </body>
 </html>
