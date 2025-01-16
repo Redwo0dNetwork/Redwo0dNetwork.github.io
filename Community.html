@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redwood Network - Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5em;
+        }
+        .community-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .community-card {
+            flex: 1 1 calc(33.333% - 1em);
+            background: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .community-card h3 {
+            margin-top: 0;
+        }
+        .discord-link, .bluesky-link, .youtube-link {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .discord-link {
+            background-color: #7289da;
+        }
+        .discord-link:hover {
+            background-color: #5b6eae;
+        }
+        .bluesky-link {
+            background-color: #1c4e80; /* Darker Blue */
+        }
+        .bluesky-link:hover {
+            background-color: #153a5c;
+        }
+        .youtube-link {
+            background-color: #ff0000; /* YouTube Red */
+        }
+        .youtube-link:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #2c3e50;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Redwood Network - Community</h1>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#games">Games</a>
+            <a href="index.html#community">Community</a>
+            <a href="updates.html">Updates</a>
+            <a href="status.html">Game Server Status</a>
+            <a href="index.html#faq">FAQs</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Community Overview Section -->
+        <section id="community-overview" class="section">
+            <h2>Welcome to the Redwood Network Community</h2>
+            <p>At Redwood Network, we're more than just game servers. We're a community of gamers, creators, and enthusiasts who share a passion for immersive gameplay and meaningful connections. Whether you're looking for a group of friends to team up with or you're interested in building your own community within our network, you're in the right place!</p>
+            <p>We offer a variety of servers for popular games like Minecraft, Project Zomboid, GTA V, and more. But beyond that, we host events, discussions, and meetups where players can engage and collaborate. Join us today and be part of something bigger!</p>
+        </section>
+
+        <!-- How to Join the Community Section -->
+        <section id="join-community" class="section">
+            <h2>How to Join the Community</h2>
+            <p>Becoming a member of our community is simple! Here are the ways you can get involved:</p>
+            <div class="community-content">
+                <div class="community-card">
+                    <h3>Join Our Discord</h3>
+                    <p>Our Discord server is the heart of our community. Stay up to date with the latest announcements, chat with other players, and get involved in discussions.</p>
+                    <a href="https://discord.com/invite/YOURDISCORDLINK" class="discord-link">Join Discord</a>
+                </div>
+                <div class="community-card">
+                    <h3>Connect on Social Media</h3>
+                    <p>Follow us on social media to stay in the loop about upcoming events, server updates, and more! Join the conversation and share your gameplay experiences with us!</p>
+                    <a href="https://bsky.app/profile/YourBlueSkyUsername" class="bluesky-link">Follow on BlueSky</a>
+                    <a href="https://youtube.com/c/YourYoutubeChannel" class="youtube-link">Follow on YouTube</a> <!-- YouTube Button -->
+                </div>
+                <div class="community-card">
+                    <h3>Participate in Community Events</h3>
+                    <p>We host regular community events like tournaments, Q&A sessions, and game nights. These events are a great way to meet new people and have fun!</p>
+                    <p><strong>Next Event:</strong> "Minecraft Building Contest" - January 20th, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Guidelines Section -->
+        <section id="community-guidelines" class="section">
+            <h2>Community Guidelines</h2>
+            <p>We strive to maintain a respectful and friendly environment for all our members. Please take a moment to familiarize yourself with our community guidelines:</p>
+            <ul>
+                <li>Respect others and maintain a friendly attitude.</li>
+                <li>Follow the rules set by game moderators and server admins.</li>
+                <li>Keep content family-friendly—no inappropriate language or behavior.</li>
+                <li>Be inclusive and welcoming to new members.</li>
+            </ul>
+            <p>Failure to follow these guidelines may result in removal from the community or server bans. We want everyone to have a positive and enjoyable experience!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Redwood Network. All rights reserved.</p>
+    </footer>
+</body>
+</html>
