@@ -1,5 +1,4 @@
-/* style.css */
-
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,6 +7,7 @@ body {
     color: #2f4f3f; /* Dark green text */
 }
 
+/* Header Styles */
 header {
     background-color: #4b9e62; /* Tea green header */
     color: white;
@@ -36,55 +36,64 @@ nav a:hover {
     color: #a0d8b3; /* Soft green hover effect */
 }
 
+/* Active Navigation Link */
+nav .active {
+    color: #a0d8b3; /* Highlight for active page */
+}
+
+/* Layout Containers */
 .container {
     max-width: 1200px;
     margin: 2em auto;
     padding: 0 1em;
 }
 
+/* Section Styles */
 .section {
     margin-bottom: 2em;
+    padding: 2em;
+    background-color: #f9f9f9; /* Light beige background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Section Headers */
 .section h2 {
     color: #4b9e62; /* Tea green for section headings */
-    margin-bottom: 0.5em;
     font-size: 2em;
+    margin-bottom: 1em;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.status-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1em 0;
+/* Update Item Styles */
+.update-item {
     background: #ffffff;
+    padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
 }
 
-.status-table th, .status-table td {
-    border: 1px solid #ccc;
-    padding: 1em;
-    text-align: left;
+.update-item h3 {
+    color: #4b9e62; /* Tea green for update titles */
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
-.status-table th {
-    background-color: #4b9e62; /* Tea green for header */
+.update-item p {
+    color: #555; /* Neutral text for update details */
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.9em;
+    padding: 1em 0;
+    background-color: #4b9e62; /* Tea green footer */
     color: white;
-}
-
-.status-table td {
-    background-color: #f9f9f9; /* Light beige for table cells */
-}
-
-.status-online {
-    color: green;
-    font-weight: bold;
-}
-
-.status-offline {
-    color: red;
-    font-weight: bold;
+    text-align: center;
 }
 
 footer p {
@@ -94,22 +103,9 @@ footer p {
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5em;
+    font-weight: bold;
 }
 
 footer a:hover {
-    color: #a0d8b3; /* Soft green hover effect for footer links */
-}
-
-footer .social-icon {
-    margin: 0 10px;
-}
-
-footer {
-    font-size: 0.9em;
-    padding: 1em 0;
-    background-color: #4b9e62; /* Tea green footer */
-    color: white;
-    text-align: center;
+    color: #a0d8b3; /* Soft green hover effect */
 }
