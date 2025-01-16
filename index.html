@@ -7,7 +7,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f0d9; /* Soft tea green background */
+            color: #2f4f3f; /* Dark green text */
+        }
+        header {
+            background-color: #4b9e62; /* Tea green header */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #a0d8b3; /* Soft green hover effect */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .section {
+            margin-bottom: 2em;
+            padding: 2em;
+            background-color: #f9f9f9; /* Light beige background */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        .section h2 {
+            color: #4b9e62; /* Tea green for section headings */
+            font-size: 2em;
+            margin-bottom: 1em;
+            text-transform: uppercase; /* Bold appearance */
+            letter-spacing: 2px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #555; /* Darker text for better readability */
+        }
+
+        /* White box styles for the paragraph section */
+        .about-box {
+            background-color: #ffffff;
+            padding: 2.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            margin-bottom: 2em;
+            color: #2f4f3f; /* Dark green text inside the box */
+            max-width: 900px;
+            margin: 2em auto;
+        }
+
+        .games-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .game {
+            flex: 1 1 calc(33.333% - 1em);
+            background: #ffffff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .game img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .discord-section {
+            text-align: center;
+            margin: 2em 0;
+        }
+        .discord-link {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            background-color: #7289da;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .discord-link:hover {
+            background-color: #5b6eae;
+        }
+        footer p {
+            margin: 0.5em 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        footer a:hover {
+            color: #a0d8b3; /* Soft green hover effect for footer links */
+        }
+        footer .social-icon {
+            margin: 0 10px;
+        }
+        footer {
+            font-size: 0.9em;
+            padding: 1em 0;
+            background-color: #4b9e62; /* Tea green footer */
+            color: white;
+            text-align: center;
+        }
+        .faq {
+            margin: 2em 0;
+        }
+        .faq h3 {
+            margin-bottom: 0.5em;
+        }
+        .faq p {
+            margin-bottom: 1em;
+        }
+        .contact-form {
+            background: #ffffff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 0.75em;
+            background-color: #4b9e62; /* Tea green button */
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #3a7a4f; /* Darker tea green on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
