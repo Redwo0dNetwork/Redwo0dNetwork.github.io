@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redwood Network - Updates</title>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -64,16 +67,33 @@
         .update-item p {
             color: #555;
         }
+         footer p {
+        margin: 0.5em 0;
+    }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        
+        footer a:hover {
+            color: #3498db;
+        }
+        
+        footer .social-icon {
+            margin: 0 10px;
+        }
+        
         footer {
-            text-align: center;
+            font-size: 0.9em;
             padding: 1em 0;
             background-color: #2c3e50;
             color: white;
+            text-align: center;
         }
-        footer p {
-            margin: 0;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <header>
@@ -213,7 +233,27 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Redwood Network. All rights reserved.</p>
-    </footer>
+    <p>&copy; 2025 Redwood Network. All rights reserved.</p>
+    <p>
+        <a href="https://bsky.app/profile/redwoodnetwork" target="_blank" class="social-icon">
+            <i class="fab fa-bsky"></i>
+        </a>
+        <a href="https://youtube.com/c/RedwoodNetwork" target="_blank" class="social-icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.gg/redwoodnetwork" target="_blank" class="social-icon">
+            <i class="fab fa-discord"></i>
+        </a>
+    </p>
+    <p>
+        <a href="index.html#about">About Us</a> |
+        <a href="index.html#games">Games</a> |
+        <a href="community.html">Community</a> |
+        <a href="updates.html">Updates</a> |
+        <a href="status.html">Game Server Status</a> |
+        <a href="index.html#faq">FAQs</a> |
+        <a href="index.html#contact">Contact</a>
+    </p>
+</footer>
 </body>
 </html>
