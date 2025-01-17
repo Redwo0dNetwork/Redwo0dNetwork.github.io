@@ -11,11 +11,11 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e2f0d9; /* Soft tea green background */
-            color: #2f4f3f; /* Dark green text */
+            background-color: #e2f0d9;
+            color: #2f4f3f;
         }
         header {
-            background-color: #4b9e62; /* Tea green header */
+            background-color: #4b9e62;
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -35,7 +35,7 @@
         }
         nav a:hover {
             text-decoration: underline;
-            color: #a0d8b3; /* Soft green hover effect */
+            color: #a0d8b3;
         }
         .container {
             max-width: 1200px;
@@ -45,15 +45,15 @@
         .section {
             margin-bottom: 2em;
             padding: 2em;
-            background-color: #f9f9f9; /* Light beige background */
+            background-color: #f9f9f9;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
-            color: #4b9e62; /* Tea green for section headings */
+            color: #4b9e62;
             font-size: 2em;
             margin-bottom: 1em;
-            text-transform: uppercase; /* Bold appearance */
+            text-transform: uppercase;
             letter-spacing: 2px;
         }
         .contact-form {
@@ -77,7 +77,7 @@
             display: block;
             width: 100%;
             padding: 0.75em;
-            background-color: #4b9e62; /* Tea green button */
+            background-color: #4b9e62;
             color: white;
             font-weight: bold;
             border: none;
@@ -85,7 +85,7 @@
             cursor: pointer;
         }
         .contact-form button:hover {
-            background-color: #3a7a4f; /* Darker tea green on hover */
+            background-color: #3a7a4f;
         }
         footer p {
             margin: 0.5em 0;
@@ -97,7 +97,7 @@
             font-size: 1.5em;
         }
         footer a:hover {
-            color: #a0d8b3; /* Soft green hover effect for footer links */
+            color: #a0d8b3;
         }
         footer .social-icon {
             margin: 0 10px;
@@ -105,7 +105,7 @@
         footer {
             font-size: 0.9em;
             padding: 1em 0;
-            background-color: #4b9e62; /* Tea green footer */
+            background-color: #4b9e62;
             color: white;
             text-align: center;
         }
@@ -115,7 +115,7 @@
     <header>
         <h1>Redwood Network - Contact</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="community.html">Community</a>
             <a href="updates.html">Updates</a>
             <a href="status.html">Game Server Status</a>
@@ -129,7 +129,7 @@
             <h2>Contact Us</h2>
             <p>If you have any questions, need support, or just want to get in touch, feel free to reach out. We’d love to hear from you!</p>
 
-            <form class="contact-form" action="submit_form.php" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/myzzadjn" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -165,4 +165,36 @@
             <a href="community.html">Community</a> |
             <a href="updates.html">Updates</a> |
             <a href="status.html">Game Server Status</a> |
-            <a href="faq.html">F
+            <a href="faq.html">FAQs</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    form.reset(); // Clear the form
+                } else {
+                    console.error('Form submission failed with status: ' + response.status);
+                    alert('Oops! Something went wrong. Please try again later.');
+                }
+            })
+            .catch(error => {
+                console.error('Error in form submission:', error);
+                alert('There was an error. Please try again later.');
+            });
+        });
+    </script>
+</body>
+</html>
