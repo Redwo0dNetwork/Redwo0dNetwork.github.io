@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redwood Network - Community</title>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f0d9;
+            color: #2f4f3f;
+        }
+
+        header {
+            background-color: #4b9e62;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #a0d8b3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        .section {
+            margin-bottom: 2em;
+            padding: 2em;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #4b9e62;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        .community-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+        }
+
+        .community-card {
+            flex: 1 1 calc(33.333% - 1em);
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1.5em;
+            text-align: center;
+        }
+
+        .community-card h3 {
+            margin-bottom: 1em;
+            color: #4b9e62;
+        }
+
+        .community-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Styled Buttons for Discord, Bluesky, and YouTube */
+        .discord-link, .bluesky-link, .youtube-link {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            margin: 1em auto;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1em;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .discord-link {
+            background-color: #7289da;
+        }
+
+        .discord-link:hover {
+            background-color: #5b6eae;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .bluesky-link {
+            background-color: #1d9bf0;
+        }
+
+        .bluesky-link:hover {
+            background-color: #1873cc;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .youtube-link {
+            background-color: #ff0000;
+        }
+
+        .youtube-link:hover {
+            background-color: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Newsletter Styling to match "How to Join the Community" section */
+        .newsletter-card {
+            flex: 1 1 calc(33.333% - 1em);
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1.5em;
+            text-align: center;
+        }
+
+        .newsletter-card h3 {
+            margin-bottom: 1em;
+            color: #4b9e62;
+        }
+
+        .newsletter-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .newsletter-form input[type="email"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #4b9e62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #4b9e62;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer a:hover {
+            color: #a0d8b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Redwood Network - Community</h1>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="community/index.html">Community</a>
+              <a href="updates/index.html">Updates</a>
+              <a href="status/index.html">Game Server Status</a>
+              <a href="faq/index.html">FAQs</a>
+              <a href="contact/index.html">Contact</a>
+          </nav>
+    </header>
+
+    <div class="container">
+        <section id="community-overview" class="section">
+            <h2>Welcome to the Redwood Network Community</h2>
+            <p>At Redwood Network, we're more than just game servers. We're a community of gamers, creators, and enthusiasts who share a passion for immersive gameplay and meaningful connections.</p>
+        </section>
+
+        <section id="join-community" class="section">
+            <h2>How to Join the Community</h2>
+            <div class="community-content">
+                <div class="community-card">
+                    <h3>Join Our Discord</h3>
+                    <p>Our Discord server is the heart of our community.</p>
+                    <a href="https://discord.com/invite/YOURDISCORDLINK" class="discord-link">Join Discord</a>
+                </div>
+                <div class="community-card">
+                    <h3>Connect on Social Media</h3>
+                    <p>Follow us on social media to stay in the loop about upcoming events.</p>
+                    <a href="https://bsky.app/profile/YourBlueSkyUsername" class="bluesky-link">Follow on BlueSky</a>
+                    <a href="https://www.youtube.com/@RedwoodRadical" class="youtube-link">Follow on YouTube</a>
+                </div>
+                <div class="community-card">
+                    <h3>Participate in Community Events</h3>
+                    <p>We host regular community events like tournaments and game nights.</p>
+                    <p><strong>Next Event:</strong> "Minecraft Building Contest" - ??? ???, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="section">
+            <div class="community-content">
+                <div class="newsletter-card">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get updates and exciting news directly in your inbox.</p>
+                    <div class="newsletter-form">
+                        <form action="https://9b2bafd7.sibforms.com/serve/MUIFAFX4B1jf8xkcNouMgerla85cEU0s0pq270cPDmRBakejPivTMCjnfNKpxyc7o2bUiH82J4z1oYL3zh20V5-5MFL79Ogt7J0TOTZPqhNQPGXLVoQ_XpmNJUArR6i8ye0xrGxkT0zBsfznzz7QnaU5qltz2LdJ48sutiMDUl3xfh85MpCIm7S8AhABY2IqJxxNJnGuwit1hoKx" method="POST">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Redwood Network. All rights reserved.</p>
+    </footer>
+</body>
+</html>
