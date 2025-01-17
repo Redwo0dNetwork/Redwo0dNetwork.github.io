@@ -135,6 +135,30 @@
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* Remove the light gray background and border from the newsletter form */
+        .sib-form {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sib-form-container {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        .sib-form-message-panel {
+            display: none; /* Hide both messages initially */
+        }
+
+        /* Remove the thin border around the form */
+        #sib-container {
+            text-align: center;
+            max-width: 540px;
+            margin: 0 auto;
+            border: none; /* Removed the border */
+        }
+
         footer {
             background-color: #4b9e62;
             color: white;
@@ -188,34 +212,48 @@
                     <a href="https://youtube.com/c/YourYoutubeChannel" class="youtube-link">Follow on YouTube</a>
                 </div>
                 <div class="community-card">
-                    <h3>Participate in Community Events</h3>
-                    <p>We host regular community events like tournaments and game nights.</p>
-                    <p><strong>Next Event:</strong> "Minecraft Building Contest" - ??? ???, 2025</p>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter and stay updated with the latest community news.</p>
+                    <!-- Brevo Newsletter Form -->
+                    <div class="sib-form">
+                        <div id="sib-form-container" class="sib-form-container">
+                            <div id="error-message" class="sib-form-message-panel" style="font-size: 14px; text-align: left; font-family: Helvetica, sans-serif; color: #661d1d; background-color: #ffeded; border-radius: 3px; border-color: #ff4949;">
+                                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <span class="sib-form-message-panel__inner-text">
+                                        Your subscription could not be saved. Please try again.
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="success-message" class="sib-form-message-panel" style="font-size: 14px; text-align: left; font-family: Helvetica, sans-serif; color: #085229; background-color: #e7faf0; border-radius: 3px; border-color: #13ce66;">
+                                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="sib-form-message-panel__inner-text">
+                                        Your subscription has been successful.
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align: center; max-width: 540px; border-radius: 3px; border-width: 0px; border-color: #C0CCD9; border-style: none;">
+                                <form id="sib-form" method="POST" action="https://9b2bafd7.sibforms.com/serve/MUIFAFX4B1jf8xkcNouMgerla85cEU0s0pq270cPDmRBakejPivTMCjnfNKpxyc7o2bUiH82J4z1oYL3zh20V5-5MFL79Ogt7J0TOTZPqhNQPGXLVoQ_XpmNJUArR6i8ye0xrGxkT0zBsfznzz7QnaU5qltz2LdJ48sutiMDUl3xfh85MpCIm7S8AhABY2IqJxxNJnGuwit1hoKx" data-type="subscription">
+                                    <div style="padding: 8px 0;">
+                                        <div class="sib-form-block" style="font-size: 16px; color: #333;">
+                                            <input type="email" name="email" placeholder="Enter your email" required style="padding: 10px; width: 100%; max-width: 350px; border-radius: 5px; border: 1px solid #ddd;">
+                                        </div>
+                                    </div>
+                                    <div style="padding-top: 15px;">
+                                        <button type="submit" style="padding: 10px 20px; background-color: #4b9e62; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-      <footer>
+    <footer>
         <p>&copy; 2025 Redwood Network. All rights reserved.</p>
-        <p>
-            <a href="https://bsky.app/profile/redwoodnetwork" target="_blank" class="social-icon">
-                <i class="fab fa-bsky"></i>
-            </a>
-            <a href="https://discord.gg/redwoodnetwork" target="_blank" class="social-icon">
-                <i class="fab fa-discord"></i>
-            </a>
-            <a href="https://youtube.com/c/RedwoodNetwork" target="_blank" class="social-icon">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </p>
-        <p>
-            <a href="index.html">Home</a> |
-            <a href="community.html">Community</a> |
-            <a href="updates.html">Updates</a> |
-            <a href="status.html">Game Server Status</a> |
-            <a href="faq.html">FAQs</a> |
-        </p>
     </footer>
 </body>
 </html>
